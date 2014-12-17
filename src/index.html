@@ -1,0 +1,45 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Catalog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body ng-app="ubntCatalogApp">
+    <!--[if lte IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <link link-ref="'/catalog'" link-name="'Catalog'">
+          <link link-ref="'/about'" link-name="'About'">
+        </ul>
+        <h2 id="title" class="text-muted">Simple Product Catalog</h2>
+      </div>
+
+      <div ng-view=""></div>
+
+      <div class="footer">
+        <p>Ubiquity Networks Polska</p>
+      </div>
+    </div>
+
+    <script src="components/jquery/dist/jquery.js"></script>
+    <script src="components/angular/angular.js"></script>
+    <script src="components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="components/angular-animate/angular-animate.js"></script>
+    <script src="components/angular-route/angular-route.js"></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers/catalog.js"></script>
+    <script src="scripts/controllers/about.js"></script>
+    <script src="scripts/directives/link.js"></script>
+    <script src="scripts/services/device.js"></script>
+    <script src="scripts/services/cart.js"></script>
+  </body>
+</html>
