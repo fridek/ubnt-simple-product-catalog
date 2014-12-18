@@ -16,8 +16,8 @@ Your task is to:
 
 ### Dependencies
 
- * `npm install -g bower-cli`
- * `npm install -g grunt`
+ * `npm install -g bower`
+ * `npm install -g grunt-cli`
 
 ### How to locally build the project
 
