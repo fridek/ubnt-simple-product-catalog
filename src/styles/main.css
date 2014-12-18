@@ -24,6 +24,15 @@ body {
   padding-bottom: 19px;
 }
 
+/* Custom table vertical align */
+.devices > tbody > tr > td {
+  vertical-align: middle;
+}
+
+.cart {
+  background-color: #eee;
+}
+
 /* Custom page footer */
 .footer {
   padding-top: 19px;

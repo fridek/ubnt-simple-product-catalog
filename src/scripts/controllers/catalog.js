@@ -18,22 +18,10 @@
       this.devices = DeviceService.devices;
 
       /**
-       * List of products in cart
-       * @type {ProductMap}
-       */
-      this.products = CartService.products;
-
-      /**
        * Adds device to cart
        * @type {Function}
        */
       this.addDevice = CartService.addDevice.bind(CartService);
-
-      /**
-       * Removes from cart all devices with given id
-       * @type {Function}
-       */
-      this.removeDevice = CartService.removeDevice.bind(CartService);
 
       DeviceService.fetchDevices().then(function(devices) {
         this.devices = devices;

@@ -25,6 +25,14 @@
       };
 
       /**
+       * Checks is cart empty
+       * @returns {boolean}
+       */
+      CartService.prototype.isEmpty = function() {
+        return Object.keys(this.products).length === 0;
+      };
+
+      /**
        * Adds device to cart
        * @param {Device} device
        */

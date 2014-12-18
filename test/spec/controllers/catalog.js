@@ -9,9 +9,9 @@ describe('Controller: CatalogCtrl', function () {
       $timeout;
 
   // Initialize the controller
-  beforeEach(inject(function ($controller, _$timeout_) {
+  beforeEach(inject(function ($controller, $injector) {
     CatalogCtrl = $controller('CatalogCtrl');
-    $timeout = _$timeout_;
+    $timeout = $injector.get('$timeout');
   }));
 
   it('should contain a list of devices', function () {

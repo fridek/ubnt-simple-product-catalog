@@ -4,8 +4,8 @@
   </div>
 
   <div ng-hide="Catalog.isLoading" class="col-md-8">
-    <h3>Catalog</h3>
-    <table class="table" id="devices">
+    <h3>Devices</h3>
+    <table class="table devices" id="devices">
       <thead>
         <tr>
           <th>Name</th>
@@ -23,23 +23,5 @@
     </table>
   </div>
 
-  <div ng-hide="Catalog.isLoading" class="col-md-4 bg-warning">
-    <h3>Cart</h3>
-    <table class="table" id="cart">
-      <thead>
-        <tr>
-          <th>Name</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr ng-repeat="product in Catalog.products" data-id="{{product.device.id}}">
-          <td>
-            {{product.device.name}}
-            <span class="badge">{{product.quantity}}</span>
-            <button type="button" class="close" ng-click="Catalog.removeDevice(product.device.id)"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <cart ng-hide="Catalog.isLoading"></cart>
 </div>

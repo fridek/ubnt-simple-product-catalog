@@ -6,7 +6,7 @@ Your task is to:
 
  * add karma unit tests for services, controllers and directives (5 in total);
  * add two protractor e2e test for catalog view;
- * send us a diff of your changes (patch is preferable) on [mailto:recruitment-cracow@ubnt.com](recruitment-cracow@ubnt.com).
+ * send us a diff of your changes (patch is preferable) to [recruitment-cracow@ubnt.com](recruitment-cracow@ubnt.com).
 
 ### Prerequisites
 
