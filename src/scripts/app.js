@@ -7,7 +7,7 @@
       'ngAnimate',
       'ngRoute'
     ])
-    .config(function ($routeProvider) {
+    .config(['$routeProvider', function ($routeProvider) {
       $routeProvider
         .when('/catalog', {
           templateUrl: 'views/catalog.html',
@@ -20,6 +20,6 @@
         .otherwise({
           redirectTo: '/catalog'
         });
-    });
+    }]);
 
 })();

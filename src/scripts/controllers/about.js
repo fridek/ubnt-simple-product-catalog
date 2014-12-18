@@ -4,12 +4,12 @@
 
   angular
     .module('ubntCatalogApp')
-    .controller('AboutCtrl', function () {
+    .controller('AboutCtrl', [function () {
       /**
        * The fullname of an author
        * @type {string}
        */
       this.author = 'Piotr Cholewczuk';
-    });
+    }]);
 
 })();

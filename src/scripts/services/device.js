@@ -47,7 +47,7 @@
 
   angular
     .module('ubntCatalogApp')
-    .service('DeviceService', function ($q, $timeout) {
+    .service('DeviceService', ['$q', '$timeout', function ($q, $timeout) {
 
       var DeviceService = function () {
         /**
@@ -86,6 +86,6 @@
       };
 
       return new DeviceService();
-    });
+    }]);
 
 })();

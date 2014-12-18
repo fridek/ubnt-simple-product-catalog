@@ -4,7 +4,7 @@
 
   angular
     .module('ubntCatalogApp')
-    .directive('link', function ($location) {
+    .directive('link', ['$location', function ($location) {
       return {
         template: '<li ng-class="{active: isActive()}"><a ng-href="/#{{path}}">{{name}}</a></li>',
         replace: true,
@@ -19,6 +19,6 @@
           };
         }
       };
-    });
+    }]);
 
 })();
