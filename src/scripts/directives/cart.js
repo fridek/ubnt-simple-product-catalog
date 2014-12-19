@@ -4,7 +4,7 @@
 
   angular
     .module('ubntCatalogApp')
-    .directive('cart', function (CartService) {
+    .directive('cart', ['CartService', function (CartService) {
       return {
         templateUrl: 'views/cart.html',
         replace: true,
@@ -23,6 +23,6 @@
           $scope.removeDevice = CartService.removeDevice.bind(CartService);
         }
       };
-    });
+    }]);
 
 })();
