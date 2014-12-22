@@ -5,7 +5,8 @@
 
   <div ng-hide="Catalog.isLoading" class="col-md-8">
     <h3>Devices</h3>
-    <table class="table devices" id="devices">
+    <input id="catalog__filterQuery" placeholder="Filter">
+    <table class="table devices" id="catalog__deviceTable">
       <thead>
         <tr>
           <th>Name</th>
@@ -14,14 +15,17 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="device in Catalog.devices" data-id="{{device.id}}">
+        <tr ng-repeat="device in Catalog.devices" data-id="{{device.id}}" draggable>
           <td>{{device.name}}</td>
           <td><img ng-src="{{device.image}}" class="img-circle"></td>
           <td><button ng-click="Catalog.addDevice(device)" type="button" class="btn btn-primary">Select</button></td>
         </tr>
       </tbody>
     </table>
+    <div id="catalog__no-items" class="alert alert-warning">
+      There are no items matching your query
+    </div>
   </div>
 
-  <cart ng-hide="Catalog.isLoading"></cart>
+  <cart id="catalog__cart"></cart>
 </div>

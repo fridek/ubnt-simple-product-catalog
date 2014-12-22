@@ -29,8 +29,20 @@ body {
   vertical-align: middle;
 }
 
+.devices tbody tr.drag {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
+}
+
 .cart {
   background-color: #eee;
+}
+
+.cart.over {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc;
 }
 
 /* Custom page footer */

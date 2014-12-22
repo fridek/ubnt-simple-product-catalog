@@ -1,12 +1,18 @@
 ### Simple Product Catalog
 
-This project is a part of the recruitment process for QA position in Krakow office of Ubiquiti Networks Polska.
+This project is a part of the recruitment process for JavaScript Developer position in Krakow office of Ubiquiti Networks Polska.
 
 Your task is to:
 
- * add karma unit tests for services, controllers and directives (5 in total);
- * add two protractor e2e test for catalog view;
+ * add filtering by product name to the catalog
+ * add drag and drop to the basket
+ * add karma unit tests for your code
  * send us a diff of your changes (patch is preferable) to [recruitment-cracow@ubnt.com](recruitment-cracow@ubnt.com).
+ 
+ There are protractor tests ready to help you verify your solution. Feel free to adjust them if needed, but please try
+ to maintain the coverage.
+ You are allowed to include any additional packages you may find helpful in solving the problem. 
+ In such case quality and scope of the package will be evaluated too.
 
 ### Prerequisites
 
