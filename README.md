@@ -1,39 +1,26 @@
-### Simple Product Catalog
+This repository is part of the recruitment process for open positions in Krakow office of Ubiquiti Networks Polska.
 
-This project is a part of the recruitment process for QA position in Krakow office of Ubiquiti Networks Polska.
+### Open positions
 
-Your task is to:
+* [QA Developer](https://github.com/cholewczuk/ubnt-simple-product-catalog/tree/qa)
+* [JavaScript Developer](https://github.com/cholewczuk/ubnt-simple-product-catalog/tree/developer)
 
- * add karma unit tests for services, controllers and directives (5 in total);
- * add two protractor e2e test for catalog view;
- * send us a diff of your changes (patch is preferable) to [recruitment-cracow@ubnt.com](recruitment-cracow@ubnt.com).
+### About us
 
-### Prerequisites
+We have a modular SPA (https://aircrm.ubnt.com/) written in Angular.js, with Backbone models,
+and a RESTful API provided by Django, Erlang and Clojure services running on AWS.
+We are using WebSockets, canvas, Grunt, Karma and Protractor. We have a company CSS components library based on Bootstrap 
+and maintained in cooperation with great graphic designers.
+Our workflow includes Github, JIRA, Jenkins and Codeship. We support the only latest versions of Chrome, Firefox, and IE.
+The front-end team has 5 members in Krakow and 2 analysts in the US. Our work is organized using Kanban.
 
- * `git`
- * `nodejs` [download](http://nodejs.org/)
- * `npm`
+We work on MacBooks Pro, with 2 x 24’’ monitors and WebStorm, but other configurations are acceptable too. 
+We offer private health care, excellent coffee, free snacks, and fun people to work with. Remote work of up to ~40% time is acceptable.
 
-### Dependencies
+### About recruitment
 
- * `npm install -g bower`
- * `npm install -g grunt-cli`
+We believe writing code is as important as having an in-person interview. Branches in this repository are tasks to be
+completed by a candidate. 
+After completing the task please send a patch to recruitment-cracow@ubnt.com along with your resume and anything else you are proud of.
 
-### How to locally build the project
-
- * `git clone git@github.com:cholewczuk/ubnt-simple-product-catalog.git`
- * `cd ubnt-simple-product-catalog`
- * `npm install`
- * `bower install`
- * `grunt`
-
-### How to locally run the project
-
- * `grunt`
-
-### How to locally test the project
-
- * `grunt`
- * in new console `grunt test`
-
-You can run single e2e suite by `grunt protractor --specs='test/e2e/views/author.e2e.js'`
+We are programmers recruiting programmers, technical details appreciated.
