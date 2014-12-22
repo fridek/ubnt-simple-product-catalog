@@ -1,6 +1,6 @@
 ### Simple Product Catalog
 
-This project is a part of the recruitment process for QA position in Krakow office of Ubiquiti Networks Polska.
+This project is a part of the recruitment process for QA Developer position in Krakow office of Ubiquiti Networks Polska.
 
 Your task is to:
 
@@ -21,8 +21,9 @@ Your task is to:
 
 ### How to locally build the project
 
- * `git clone git@github.com:cholewczuk/ubnt-simple-product-catalog.git`
+ * `git clone https://github.com/cholewczuk/ubnt-simple-product-catalog.git`
  * `cd ubnt-simple-product-catalog`
+ * `git checkout qa` 
  * `npm install`
  * `bower install`
  * `grunt`
