@@ -27,8 +27,9 @@ Your task is to:
 
 ### How to locally build the project
 
- * `git clone git@github.com:cholewczuk/ubnt-simple-product-catalog.git`
+ * `git clone https://github.com/cholewczuk/ubnt-simple-product-catalog.git`
  * `cd ubnt-simple-product-catalog`
+ * `git checkout developer` 
  * `npm install`
  * `bower install`
  * `grunt`
