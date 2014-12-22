@@ -9,7 +9,7 @@
        * The fullname of an author
        * @type {string}
        */
-      this.author = 'Piotr Cholewczuk';
+      this.author = 'Sebastian Poręba';
     }]);
 
 })();
